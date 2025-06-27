@@ -13,7 +13,7 @@ function App() {
       // minHeight="100vh"
       // gap={4}
     >
-      <GridItem as="nav" area="nav">
+      <GridItem as="nav" area="nav" >
         <NavBar />
       </GridItem>
 

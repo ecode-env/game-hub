@@ -10,10 +10,6 @@ function App() {
         base: `"nav" "main"`,
         lg: `"nav nav" "aside main"`,
       }}
-      // templateColumns={{ base: "1fr", lg: "200px 1fr" }}
-      // templateRows={{ base: "50px 1fr", lg: "50px 1fr" }}
-      // minHeight="100vh"
-      // gap={4}
     >
       <GridItem as="nav" area="nav" >
         <NavBar />

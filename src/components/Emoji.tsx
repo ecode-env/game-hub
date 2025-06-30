@@ -17,6 +17,7 @@ const Emoji = ({ rating }: Props) => {
   };
 
   const emoji = emojiMap[rating];
+  
 
   if (!emoji) return null;
 

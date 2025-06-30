@@ -83,7 +83,7 @@ vercel
 
 ## 📸 Screenshots
 
-![Game Hub UI](./screenshots/screenshot.png)
+![Game Hub UI](./screenshots/Screencast.mp4)
 
 ---
 

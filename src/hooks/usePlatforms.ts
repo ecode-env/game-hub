@@ -1,7 +1,9 @@
 import platforms from "../data/platforms";
 import { useQuery } from "@tanstack/react-query";
 import apiClint,{ FetchResponse }  from "../service/api-clint";
-interface Platform {
+
+
+export interface Platform {
   id: number;
   name: string;
   slug: string;

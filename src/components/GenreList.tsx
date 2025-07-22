@@ -16,20 +16,22 @@ interface Props {
 }
 
 const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
-  const { data = [], isLoading, error } = useGenres();
+  const { data, isLoading, error } = useGenres();
   const skeletons = Array(10).fill(0);
 
   if (error) return null;
 
   return (
     <>
-      <Heading fontSize='2xl' marginBottom={3}>Genres</Heading>
+      <Heading fontSize="2xl" marginBottom={3}>
+        Genres
+      </Heading>
       <List>
         {isLoading &&
           skeletons.map((_, index) => <GenreListSkeleton key={index} />)}
 
         {!isLoading &&
-          data.map((genre) => (
+          data?.results.map((genre) => (
             <ListItem key={genre.id} paddingY="5px">
               <HStack>
                 <Image

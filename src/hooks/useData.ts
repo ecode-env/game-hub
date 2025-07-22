@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import apiClint, { CanceledError } from "../service/api-clint";
 import { AxiosRequestConfig } from "axios";
 
-interface FetchResponse<T> {
-  id: number;
+export interface FetchResponse<T> {
+  count: number;
   results: T[];
 }
 

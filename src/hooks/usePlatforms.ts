@@ -1,6 +1,7 @@
 import platforms from "../data/platforms";
 import { useQuery } from "@tanstack/react-query";
 import APIClient, { FetchResponse } from "../service/api-clint";
+import ms from "ms";
 
 export interface Platform {
   id: number;
@@ -14,7 +15,7 @@ const usePlatforms = () =>
   useQuery<FetchResponse<Platform>>({
     queryKey: ["platforms"],
     queryFn: apiClint.getAll,
-    staleTime: 24 * 60 * 60 * 1000, // 24h
+    staleTime: ms('24h'),
     initialData: platforms,
   });
 
